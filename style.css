@@ -41,7 +41,3 @@ select, input[type="checkbox"] {
     color: white;
 }
 
-.table tbody tr:hover {
-    background-color: rgb(240, 234, 248);
-}
-
