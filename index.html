@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Content Filtering</title>
+</head>
+<body>
+    <div class="container">
+        <div class="filter">
+            <label for="category">Filters:</label>
+            <select id="category" onchange="filterProducts()">
+                <option value="">All</option>
+                <option value="Home">Home</option>
+                <option value="Apparel">Apparel</option>
+                <option value="Electronics">Electronics</option>
+            </select>
+
+            <input type="checkbox" id="ecoFriendly" onchange="filterProducts()"> <label for="ecoFriendly">Eco-friendly</label>
+            <input type="checkbox" id="new" onchange="filterProducts()"> <label for="new">New</label>
+            <input type="checkbox" id="sale" onchange="filterProducts()"> <label for="sale">Sale</label>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Tags</th>
+                </tr>
+            </thead>
+        </thead>
+            <tbody id="dynamicTable">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
